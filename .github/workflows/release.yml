@@ -1,0 +1,82 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  release:
+    name: Build and release
+    runs-on: macos-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+
+      - name: Get version from tag
+        id: version
+        run: echo "VERSION=${GITHUB_REF_NAME#v}" >> $GITHUB_OUTPUT
+
+      - name: Build app
+        run: |
+          xcodebuild clean build \
+            -project OpenConnectGUI.xcodeproj \
+            -scheme OpenConnectGUI \
+            -configuration Release \
+            -derivedDataPath build \
+            -destination "platform=macOS" \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: Find built app
+        id: app
+        run: |
+          APP=$(find build -name "OpenConnectGUI.app" -type d | head -1)
+          echo "APP_PATH=$APP" >> $GITHUB_OUTPUT
+
+      - name: Create PKG installer
+        run: |
+          mkdir -p pkg-root/Applications
+          cp -R "${{ steps.app.outputs.APP_PATH }}" pkg-root/Applications/
+
+          pkgbuild \
+            --root pkg-root \
+            --identifier com.openconnect.gui \
+            --version ${{ steps.version.outputs.VERSION }} \
+            --install-location / \
+            --scripts scripts \
+            OpenConnectGUI-${{ steps.version.outputs.VERSION }}.pkg
+
+      - name: Create DMG
+        run: |
+          mkdir dmg-contents
+          cp -R "${{ steps.app.outputs.APP_PATH }}" dmg-contents/
+          ln -s /Applications dmg-contents/Applications
+
+          hdiutil create \
+            -volname "OpenConnectGUI ${{ steps.version.outputs.VERSION }}" \
+            -srcfolder dmg-contents \
+            -ov -format UDZO \
+            OpenConnectGUI-${{ steps.version.outputs.VERSION }}.dmg
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: OpenConnect VPN ${{ steps.version.outputs.VERSION }}
+          body: |
+            ## Installation
+
+            ### PKG (recommended)
+            Download and run `OpenConnectGUI-${{ steps.version.outputs.VERSION }}.pkg` — installs automatically to `/Applications` and removes quarantine.
+
+            ### DMG (manual)
+            1. Open `OpenConnectGUI-${{ steps.version.outputs.VERSION }}.dmg`
+            2. Drag the app to Applications
+            3. On first launch, right-click → Open if macOS blocks it
+          files: |
+            OpenConnectGUI-${{ steps.version.outputs.VERSION }}.pkg
+            OpenConnectGUI-${{ steps.version.outputs.VERSION }}.dmg
