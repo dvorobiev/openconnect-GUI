@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA000001000000000000001A /* OpenConnectGUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000001000000000000001B /* OpenConnectGUIApp.swift */; };
+		AA000002000000000000002A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000002000000000000002B /* AppDelegate.swift */; };
+		AA000003000000000000003A /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000003000000000000003B /* StatusBarController.swift */; };
+		AA000004000000000000004A /* MenuBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000004000000000000004B /* MenuBuilder.swift */; };
+		AA000005000000000000005A /* VPNProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000005000000000000005B /* VPNProfile.swift */; };
+		AA000006000000000000006A /* VPNState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000006000000000000006B /* VPNState.swift */; };
+		AA000007000000000000007A /* ProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000007000000000000007B /* ProfileStore.swift */; };
+		AA000008000000000000008A /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000008000000000000008B /* KeychainManager.swift */; };
+		AA000009000000000000009A /* VPNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000009000000000000009B /* VPNManager.swift */; };
+		AA00000A0000000000000AAA /* SudoersSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000A0000000000000AAB /* SudoersSetup.swift */; };
+		AA00000B0000000000000BBA /* WindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000B0000000000000BBB /* WindowManager.swift */; };
+		AA00000C0000000000000CCA /* ProfileListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000C0000000000000CCB /* ProfileListView.swift */; };
+		AA00000D0000000000000DDA /* ProfileEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000D0000000000000DDB /* ProfileEditorView.swift */; };
+		AA00000E0000000000000EEA /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000E0000000000000EEB /* PreferencesView.swift */; };
+		C43982242F6DEA110030B379 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C43982232F6DEA110030B379 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA000001000000000000001B /* OpenConnectGUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenConnectGUIApp.swift; sourceTree = "<group>"; };
+		AA000002000000000000002B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA000003000000000000003B /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		AA000004000000000000004B /* MenuBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBuilder.swift; sourceTree = "<group>"; };
+		AA000005000000000000005B /* VPNProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNProfile.swift; sourceTree = "<group>"; };
+		AA000006000000000000006B /* VPNState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNState.swift; sourceTree = "<group>"; };
+		AA000007000000000000007B /* ProfileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStore.swift; sourceTree = "<group>"; };
+		AA000008000000000000008B /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		AA000009000000000000009B /* VPNManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNManager.swift; sourceTree = "<group>"; };
+		AA00000A0000000000000AAB /* SudoersSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudoersSetup.swift; sourceTree = "<group>"; };
+		AA00000B0000000000000BBB /* WindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowManager.swift; sourceTree = "<group>"; };
+		AA00000C0000000000000CCB /* ProfileListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileListView.swift; sourceTree = "<group>"; };
+		AA00000D0000000000000DDB /* ProfileEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditorView.swift; sourceTree = "<group>"; };
+		AA00000E0000000000000EEB /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
+		AA000010000000000000100B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA000011000000000000110B /* OpenConnectGUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenConnectGUI.entitlements; sourceTree = "<group>"; };
+		AA000012000000000000120B /* OpenConnectGUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenConnectGUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C43982232F6DEA110030B379 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA000020000000000000200A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA000030000000000000300A /* OpenConnectGUI */ = {
+			isa = PBXGroup;
+			children = (
+				C43982232F6DEA110030B379 /* Assets.xcassets */,
+				AA000031000000000000310A /* App */,
+				AA000032000000000000320A /* Resources */,
+				AA000011000000000000110B /* OpenConnectGUI.entitlements */,
+			);
+			path = OpenConnectGUI;
+			sourceTree = "<group>";
+		};
+		AA000031000000000000310A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AA000001000000000000001B /* OpenConnectGUIApp.swift */,
+				AA000002000000000000002B /* AppDelegate.swift */,
+				AA000003000000000000003B /* StatusBarController.swift */,
+				AA000004000000000000004B /* MenuBuilder.swift */,
+				AA000033000000000000330A /* Model */,
+				AA000034000000000000340A /* Services */,
+				AA000035000000000000350A /* UI */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AA000032000000000000320A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA000010000000000000100B /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AA000033000000000000330A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AA000005000000000000005B /* VPNProfile.swift */,
+				AA000006000000000000006B /* VPNState.swift */,
+				AA000007000000000000007B /* ProfileStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AA000034000000000000340A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AA000008000000000000008B /* KeychainManager.swift */,
+				AA000009000000000000009B /* VPNManager.swift */,
+				AA00000A0000000000000AAB /* SudoersSetup.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AA000035000000000000350A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AA00000B0000000000000BBB /* WindowManager.swift */,
+				AA00000C0000000000000CCB /* ProfileListView.swift */,
+				AA00000D0000000000000DDB /* ProfileEditorView.swift */,
+				AA00000E0000000000000EEB /* PreferencesView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		AA000040000000000000400A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA000012000000000000120B /* OpenConnectGUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA000050000000000000500A = {
+			isa = PBXGroup;
+			children = (
+				AA000030000000000000300A /* OpenConnectGUI */,
+				AA000040000000000000400A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA000060000000000000600A /* OpenConnectGUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA000070000000000000700A /* Build configuration list for PBXNativeTarget "OpenConnectGUI" */;
+			buildPhases = (
+				AA000080000000000000800A /* Sources */,
+				AA000020000000000000200A /* Frameworks */,
+				AA000090000000000000900A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenConnectGUI;
+			productName = OpenConnectGUI;
+			productReference = AA000012000000000000120B /* OpenConnectGUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA0000A00000000000000A0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					AA000060000000000000600A = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = AA0000B00000000000000B0A /* Build configuration list for PBXProject "OpenConnectGUI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA000050000000000000500A;
+			productRefGroup = AA000040000000000000400A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA000060000000000000600A /* OpenConnectGUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA000090000000000000900A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C43982242F6DEA110030B379 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA000080000000000000800A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000001000000000000001A /* OpenConnectGUIApp.swift in Sources */,
+				AA000002000000000000002A /* AppDelegate.swift in Sources */,
+				AA000003000000000000003A /* StatusBarController.swift in Sources */,
+				AA000004000000000000004A /* MenuBuilder.swift in Sources */,
+				AA000005000000000000005A /* VPNProfile.swift in Sources */,
+				AA000006000000000000006A /* VPNState.swift in Sources */,
+				AA000007000000000000007A /* ProfileStore.swift in Sources */,
+				AA000008000000000000008A /* KeychainManager.swift in Sources */,
+				AA000009000000000000009A /* VPNManager.swift in Sources */,
+				AA00000A0000000000000AAA /* SudoersSetup.swift in Sources */,
+				AA00000B0000000000000BBA /* WindowManager.swift in Sources */,
+				AA00000C0000000000000CCA /* ProfileListView.swift in Sources */,
+				AA00000D0000000000000DDA /* ProfileEditorView.swift in Sources */,
+				AA00000E0000000000000EEA /* PreferencesView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA0000C00000000000000C0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA0000D00000000000000D0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		AA0000E00000000000000E0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_SANDBOX_ENABLED = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				AUTOMATION_APPLE_EVENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = OpenConnectGUI/OpenConnectGUI.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = OpenConnectGUI/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.openconnect.gui;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		AA0000F00000000000000F0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_SANDBOX_ENABLED = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				AUTOMATION_APPLE_EVENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = OpenConnectGUI/OpenConnectGUI.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = OpenConnectGUI/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.openconnect.gui;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA000070000000000000700A /* Build configuration list for PBXNativeTarget "OpenConnectGUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000E00000000000000E0A /* Debug */,
+				AA0000F00000000000000F0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA0000B00000000000000B0A /* Build configuration list for PBXProject "OpenConnectGUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000C00000000000000C0A /* Debug */,
+				AA0000D00000000000000D0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA0000A00000000000000A0A /* Project object */;
+}
